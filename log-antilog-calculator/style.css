@@ -1,0 +1,51 @@
+main {
+   max-width: 480px;
+   margin: auto;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+   -moz-appearance: textfield;
+}
+
+.btn {
+   margin: auto 5px;
+}
+
+.ans {
+   margin: 30px auto;
+   font-size: 20px;
+}
+
+/* label focus color */
+#number[type=number]:focus+label,
+#baseInput[type=number]:focus+label {
+   color: #1976D2;
+}
+
+/* label underline focus color */
+#number[type=number]:focus,
+#baseInput[type=number]:focus {
+   border-bottom: 1px solid #1976D2;
+   box-shadow: 0 1px 0 0 #1976D2;
+}
+
+/* radio button */
+
+#baseE:checked+span:before,
+#customBase:checked+span:before {
+   border-color: #1976D2;
+}
+
+#baseE:checked+span:after,
+#customBase:checked+span:after {
+   background-color: #1976D2;
+   border-color: #1976D2;
+}

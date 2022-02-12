@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Google Tag Manager -->
+   <script>(function (w, d, s, l, i) {
+         w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+               new Date().getTime(), event: 'gtm.js'
+         }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+               'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-TQ6RHVK');
+   </script>
+   <!-- End Google Tag Manager -->
+
+
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Log and Antilog calculator - dubeytech</title>
+   <meta name="keywords" content="log, antilog, calculator, log antilog calculator, dubeytech, find log, find antilog">
+   <meta name="description" content="Log and Antilog calculator by dubeytech">
+
+
+   <!-- Compiled and minified MATERIALIZE CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <!-- Compiled and minified MATERIALIZE JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <!-- custom styles -->
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+   <!-- Google Tag Manager (noscript) -->
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQ6RHVK" height="0" width="0"
+         style="display:none;visibility:hidden"></iframe></noscript>
+   <!-- End Google Tag Manager (noscript) -->
+
+
+   <!-- navbar -->
+   <nav>
+      <div class="nav-wrapper blue darken-2">
+         <a href="./index.html" class="brand-logo center">dubeytech</a>
+         <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+         </ul> -->
+      </div>
+   </nav>
+   <!-- main -->
+   <main>
+      <h4 class="center blue-text text-darken-3">Log and antilog calculator</h4>
+      <!-- number input -->
+      <div class="row">
+         <div style="margin-top: 20px;" class="input-field col s8  offset-s2 ">
+            <input id="number" type="number">
+            <label for="number">Enter Number</label>
+         </div>
+      </div>
+      <!-- base input -->
+      <div class="row">
+         <div class="input-field col s8 offset-s2 ">
+            <input id="baseInput" type="number" value="10">
+            <label for="base">Enter Base</label>
+         </div>
+      </div>
+
+      <!-- base E -->
+      <div class="row">
+         <div class="input-field col s4 offset-s2">
+            <p>
+               <label>
+                  <input id="baseE" class="with-gap" onclick="toggleBaseInput()" name="group1" type="radio"
+                     value="Math.E" />
+                  <span>Base e</span>
+               </label>
+            </p>
+         </div>
+         <!-- custom base -->
+         <div class="input-field col s4">
+            <p>
+               <label>
+                  <input checked id="customBase" class="with-gap" onclick="toggleBaseInput()" name="group1"
+                     type="radio" />
+                  <span>Custom Base</span>
+               </label>
+            </p>
+         </div>
+      </div>
+      <!-- base input end -->
+      <div class="row">
+         <div class="col s10 offset-s1 center ">
+            <button id="findLogBtn" class="waves-effect waves-light btn red lighten-2  blue darken-2">Find
+               Log</button>
+            <button id="findAntilogBtn" class=" waves-effect waves-light btn red lighten-2  blue darken-2">
+               Find AntiLog
+            </button>
+         </div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+         <div class="col s10 offset-s1">
+            <p id="ans" class="center ans">Answer:</p>
+         </div>
+      </div>
+   </main>
+   <!-- scripts -->
+   <script src="./index.js"></script>
+</body>
+
+</html>

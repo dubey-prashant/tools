@@ -38,7 +38,6 @@ input[type='number'] {
 }
 
 /* radio button */
-
 #baseE:checked + span:before,
 #customBase:checked + span:before {
   border-color: #1976d2;
